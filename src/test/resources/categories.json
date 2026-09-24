@@ -1,0 +1,48 @@
+[
+  {
+    "name": "✅ Passed tests",
+    "matchedStatuses": ["passed"]
+  },
+  {
+    "name": "💔 Broken tests",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "❌ Failed tests",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "⏭️ Skipped tests",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "🐞 Product defects",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*AssertionError.*"
+  },
+  {
+    "name": "🔧 Test framework issues",
+    "matchedStatuses": ["broken"],
+    "traceRegex": ".*NullPointerException.*|.*IndexOutOfBoundsException.*"
+  },
+  {
+    "name": "🌐 UI test failures",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*TimeoutError.*|.*Page.goto.*|.*Locator.*"
+  },
+  {
+    "name": "⚡ API test failures",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*status code.*|.*RestAssured.*"
+  },
+  {
+    "name": "🎭 Playwright infrastructure",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Playwright.*|.*Browser.*|.*Context.*"
+  },
+  {
+    "name": "⏱️ Timeout issues",
+    "matchedStatuses": ["broken"],
+    "messageRegex": ".*Timeout.*|.*timed out.*"
+  }
+]
